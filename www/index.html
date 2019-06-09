@@ -67,8 +67,8 @@
         for (i = 0; i < close.length; i++) {
             close[i].onclick = function () {
                 var div = this.parentElement;
-                console.log(div.id);
                 todoList = todoList.filter(item => item.id !== parseInt(div.id));
+                localStorage.setItem('todoList', JSON.stringify(todoList));
                 div.style.display = "none";
             }
         }
