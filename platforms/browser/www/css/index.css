@@ -84,7 +84,7 @@ ul li.checked::before {
 }
 
 .addArea {
-  padding: 0px 30px;
+  padding: 0px 0px;
   color: white;
   text-align: center;
 }
@@ -116,13 +116,13 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #FBE356;
-  color: #000;
+  padding: auto;
+  width: 30px;
+  background: #fff;
+  color: #ccc;
   float: left;
   text-align: center;
-  font-size: 16px;
+  font-size: 30px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
