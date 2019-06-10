@@ -71,16 +71,28 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f44336;
+  background-color: #282C34;
   color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #282C34;
   padding: 30px 40px;
   color: white;
   text-align: center;
+}
+
+.addArea {
+  padding: 0px 30px;
+  color: white;
+  text-align: center;
+}
+
+.addArea:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Clear floats after the header */
@@ -99,14 +111,15 @@ input {
   padding: 10px;
   float: left;
   font-size: 16px;
+  outline: none;
 }
 
 /* Style the "Add" button */
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
-  color: #555;
+  background: #FBE356;
+  color: #000;
   float: left;
   text-align: center;
   font-size: 16px;

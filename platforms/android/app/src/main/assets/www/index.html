@@ -13,7 +13,9 @@
     <script type="text/javascript" src="cordova.js"></script>
     <div id="myDIV" class="header">
         <h2 style="margin:5px">Reminder</h2>
-        <input type="text" id="myInput" placeholder="Title...">
+    </div>
+    <div class="addArea">
+        <input type="text" id="myInput" placeholder="New...">
         <span onclick="newElement()" class="addBtn">Add</span>
     </div>
 
@@ -72,6 +74,19 @@
                 div.style.display = "none";
             }
         }
+
+        var input = document.getElementById("myInput");
+
+        // Execute a function when the user releases a key on the keyboard
+        input.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                newElement();
+            }
+        });
 
         // Add a "checked" symbol when clicking on a list item
         var list = document.querySelector('ul');
